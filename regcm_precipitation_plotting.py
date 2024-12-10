@@ -13,7 +13,7 @@ import pandas as pd
 import matplotlib.dates as mdates
 
 # Load your NetCDF file
-file_path = 'C:/Users/ece_z/Downloads/bozkurt_ATM.1990060100.nc'#'path_to_your_regcm5_output.nc'
+file_path = 'C:/Users/Downloads/bozkurt_ATM.1990060100.nc'#'path_to_your_regcm5_output.nc'
 data = xr.open_dataset(file_path)
 
 # Inspect the dataset
@@ -25,7 +25,7 @@ data_frame = data.to_dataframe();
 for var in data.data_vars:
     print(f"{var}: {data[var].attrs.get('units', 'No units attribute')}")
     
-file_path2 = "C:/Users/ece_z/OneDrive/Desktop/bozkurt_nonhydro_ATM.1990060100.nc"
+file_path2 = "C:/Users/OneDrive/Desktop/bozkurt_nonhydro_ATM.1990060100.nc"
 data2 = xr.open_dataset(file_path2)
 
 # Inspect the dataset
@@ -38,7 +38,7 @@ for var in data2.data_vars:
     print(f"{var}: {data2[var].attrs.get('units', 'No units attribute')}")
 
 
-file_path3 = 'C:/Users/ece_z/Downloads/bozkurt_hydro_ATM.1990060100.nc'
+file_path3 = 'C:/Users/Downloads/bozkurt_hydro_ATM.1990060100.nc'
 data3 = xr.open_dataset(file_path3)
 
 # Inspect the dataset
@@ -52,7 +52,7 @@ for var in data3.data_vars:
     
 
 
-file_path4 = 'C:/Users/ece_z/Downloads/bozkurt_SRF.1990060100.nc'
+file_path4 = 'C:/Users/Downloads/bozkurt_SRF.1990060100.nc'
 data4 = xr.open_dataset(file_path4)
 
 # Inspect the dataset
@@ -94,7 +94,7 @@ plt.legend()
 plt.show()
 
 
-file_path5 = 'C:/Users/ece_z/Downloads/bozkurt_STS.1990060100.nc'
+file_path5 = 'C:/Users/Downloads/bozkurt_STS.1990060100.nc'
 data5 = xr.open_dataset(file_path5)
 
 # Inspect the dataset
@@ -121,7 +121,7 @@ plt.title('Temperature and Precipitation over Time')
 plt.legend()
 plt.show()
 
-file_path6 = 'C:/Users/ece_z/Downloads/bozkurt_SAV.1990060600.nc'
+file_path6 = 'C:/Users/Downloads/bozkurt_SAV.1990060600.nc'
 data6 = xr.open_dataset(file_path6)
 
 # Inspect the dataset
@@ -148,7 +148,7 @@ plt.title('Temperature and Precipitation over Time')
 plt.legend()
 plt.show()
 
-file_path7 = 'C:/Users/ece_z/Downloads/2021/bozkurt_nonhydro_SRF.2021080100.nc'
+file_path7 = 'C:/Users/Downloads/2021/bozkurt_nonhydro_SRF.2021080100.nc'
 data7 = xr.open_dataset(file_path7)
 
 # Inspect the dataset
